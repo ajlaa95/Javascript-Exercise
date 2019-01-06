@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+       
+       <meta charset="UTF-8">
+       <title>Colors</title>
+               
+<style>
+
+       body {
+       background:#33ccff;
+       }
+       #Boja {
+       margin-left:200px;
+       width:800px;
+       height:250px;
+       font-size:80px;
+       text-align:center;
+                          
+       }
+                       
+</style>
+ 
+</head>
+       
+<body>
+
+      <p id=h_1 style="font-size:25px"><b> Izaberi omiljenu boju:</b></p>
+               
+<select id="select" onchange="Boja(this);" >
+         <option></option>
+         <option id=c_1 style="color:red">Crvena</option>
+         <option id=c_2 style="color:blue">Plava</option>
+         <option id=c_3 style="color:yellow">Žuta</option>
+         <option id=c_4 style="color:green">Zelena</option>
+         <option id=c_5 style="color:orange">Narandžasta</option>
+         <option id=c_6 style="color:black">Crna</option>
+         <option id=c_1 style="color:pink">Roza</option>          
+</select>
+
+<script>
+               
+ function Boja() {    
+     var izbor=document.getElementById("select").value;
+     var div=document.getElementById("Boja");
+         div.innerHTML=izbor;
+     }
+ 
+</script>
+
+    <div id="Boja"></div>
+	
+</body>
+</html>
